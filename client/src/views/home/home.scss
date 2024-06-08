@@ -1,0 +1,41 @@
+.container{
+    margin-top: 70px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.2);
+    background-color: white;
+}
+.containerBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxDataField, .boxDataFramework {
+    flex: 1; /* This makes the divs take up equal space. Adjust as needed. */
+    margin: 10px; /* Optional: Adds some spacing around the divs */
+}
+.boxDataFramework{
+   height: 250px;
+}
+.boxDataField{
+    height: 250px;
+ }
+
+
+
+
+
+ .custom-toolbar {
+    width: 20px;
+    padding-left: 30px;
+  }
+  .custom-toolbar-name {
+    padding-left: 900px;
+}
+.search1{
+    padding-left: 30px;
+
+}
+.buttonHome{
+    margin-left: 5px;
+}

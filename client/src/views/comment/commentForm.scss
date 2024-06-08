@@ -1,0 +1,262 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+#forum-post-content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.box-content {
+  padding: 20px;
+}
+
+/* Question Container */
+.discussion-question-container {
+  margin-bottom: 30px;
+}
+
+.discussion-question {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px; 
+  padding: 15px; 
+  margin-bottom: 20px; 
+}
+
+.discussion-question h1 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.question p {
+  font-size: 1em;
+  color: #333;
+}
+.short-hr {
+  width: 100px; 
+  height: 1px; 
+  background-color: black;
+  border: none; 
+  margin: 10px auto; 
+}
+
+.discussion-question-avatar, .discussion-answer-avatar, .discussion-comment-avatar {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: top;
+  position: relative;
+}
+
+.avatar-container img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.user-tooltip {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9em;
+  text-align: center;
+  z-index: 10;
+}
+
+.user-tooltip h6 {
+  margin: 5px 0;
+}
+
+.user-tooltip .user-tooltip-points-total {
+  font-size: 0.8em;
+}
+
+.discussion-author:hover .user-tooltip,
+.discussion-comment-avatar:hover .user-tooltip {
+  display: block;
+}
+
+/* Discussion Byline */
+.discussion-byline {
+  font-size: 0.85em;
+  color: #777;
+}
+
+.discussion-byline a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.discussion-byline a:hover {
+  text-decoration: underline;
+}
+
+.discussion-byline-time time {
+  font-style: italic;
+}
+
+/* Answers Section */
+#forum-post-answers-container {
+  margin-top: 40px;
+}
+
+.answer-count h2 {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+
+.discussion-answer {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.discussion-answer-text {
+  flex: 1;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+}
+
+.discussion-answer .markdown-zone p {
+  margin: 10px 0;
+}
+
+.discussion-answer .markdown-zone a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.discussion-answer .markdown-zone a:hover {
+  text-decoration: underline;
+}
+
+/* Comments Section */
+.discussion-comments-container {
+  padding: 15px 0;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 15px;
+}
+
+.discussion-answer-comments .discussion-comment {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.discussion-comment .discussion-comment-text {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.discussion-comment .markdown-zone p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .discussion-question h1, .answer-count h2 {
+      font-size: 1.2em;
+  }
+
+
+  .user-tooltip {
+      width: 150px;
+  }
+}
+
+.chat-box {
+  display: inline-block; /* Thêm dòng này */
+}
+
+.discussion-question-container {
+  margin-bottom: 30px;
+  text-align: center; /* Thêm dòng này */
+}
+
+.answer-link {
+  color: #007bff;
+  cursor: pointer;
+  align-content: center;
+}
+
+.answer-link:hover {
+  text-decoration: underline;
+}
+
+
+.comment-form {
+  text-align: center; /* Căn giữa nội dung của form */
+  background-color: #f9f9f9; /* Màu nền của form */
+  border-radius: 8px; /* Bo tròn góc của form */
+  padding: 20px; /* Khoảng cách giữa viền và nội dung */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Hiệu ứng bóng đổ */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Khoảng cách giữa các nhóm input */
+}
+
+.form-group .custom-form  label {
+  font-weight: bold; 
+}
+
+.form-group .custom-form input[type="text"],
+textarea {
+  width: 100%; /* Chiều rộng đầy đủ của input và textarea */
+  padding: 10px; 
+  margin-top: 5px; /* Khoảng cách trên cùng */
+  margin-bottom: 10px; /* Khoảng cách dưới cùng */
+  border: 1px solid #ccc; /* Viền */
+  border-radius: 4px; /* Bo tròn góc */
+  box-sizing: border-box;
+}
+ .custom-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none; 
+  margin-left: 10px;
+  border-radius: 10px; 
+  cursor: pointer; 
+}
+.ask-question-button button{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+}
+.form-group .custom-form button:hover {
+  background-color: #0056b3; 
+}
+
+.form-group button{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+}
